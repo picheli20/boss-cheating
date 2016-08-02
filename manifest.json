@@ -1,0 +1,19 @@
+{
+  "name": "Boss Creating",
+  "version": "1.0.0",
+  "description": "Press ESC twice to open a random program website.",
+  "homepage_url": "http://stackoverflow.com/",
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["jquery-3.1.0.min.js", "background.js"]
+    }
+  ],
+
+  "permissions": [
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "manifest_version": 2
+}
