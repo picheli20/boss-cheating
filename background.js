@@ -36,7 +36,7 @@ $(document).ready(function() {
 
 
 	$('body').keydown(function(key){
-		if(key.key === "Shift"){
+		if(key.keyCode === 65 && key.altKey){
 			isActive = !isActive;
 			start();
 			localStorage.setItem('activate', isActive);
