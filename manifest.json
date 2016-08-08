@@ -1,12 +1,13 @@
 {
-  "name": "Boss Creating",
-  "version": "1.0.0",
-  "description": "Press alt + a to activate and ECS to toggle.",
+  "name": "Boss Cheating",
+  "version": "1.0.7",
+  "description": "Press alt + A to activate, alt + S to change the subject (front or back) and ESC to toggle.",
   "homepage_url": "http://stackoverflow.com/",
   "content_scripts": [
     {
       "matches": ["http://*/*", "https://*/*"],
-      "js": ["jquery-3.1.0.min.js", "background.js"]
+      "js": ["jquery/jquery.js", "jquery/jquery-ui.js", "background.js"],
+      "css" : ["jquery/jquery-ui.css", "main.css"]
     }
   ],
 
@@ -15,5 +16,8 @@
     "http://*/*",
     "https://*/*"
   ],
-  "manifest_version": 2
+  "manifest_version": 2,
+  "icons": { "16": "img/icon.png",
+             "48": "img/icon.png",
+            "128": "img/icon.png" }
 }

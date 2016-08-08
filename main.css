@@ -1,0 +1,65 @@
+#bossCeatingContainer{
+	position: absolute !important;
+	width: 50%; 
+	height: 50%; 
+	left: 25%;
+	top: 50%;
+	overflow: hidden !important;
+	background-color: #fff !important;
+	z-index: 9999999 !important;
+}
+#bossCeatingContent{
+	width: 100%;
+    height: calc(100% - 10px);
+    overflow: scroll;
+}
+
+#messageArea{
+	background: #020202;
+	color: #aaa;
+	text-align: center;
+}
+
+#fakeContent{
+	position: absolute;
+	width: 100% !important;
+	height: 100% !important;
+	z-index: 9999998 !important;
+	border: 0 !important;
+}
+
+#bossCeating-dragArea{
+	width: 100%;
+	height: 10px;
+	border: 1px solid #ccc;
+	cursor:move;
+}
+
+#nwgrip, #negrip, #swgrip, #segrip {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border: 1px solid #ccc;
+	z-index: 999;
+	cursor:se-resize;
+}
+
+#segrip{
+	bottom: 0;
+	left: 0;
+}
+
+#swgrip{
+	top: 0;
+	right: 0;
+}
+
+#negrip{
+	top: 0;
+	left: 0;
+}
+
+#nwgrip{
+	bottom: 0;
+	right: 0;
+}
